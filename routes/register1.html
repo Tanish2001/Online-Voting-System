@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="testbox">
+        <h1>Registration</h1>
+
+        <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+            <hr>
+            <div class="accounttype">
+                <input type="radio" value="1" id="radioOne" name="role" checked />
+                <label for="radioOne" class="radio" chec>Voter</label>
+                <input type="radio" value="2" id="radioTwo" name="role" />
+                <label for="radioTwo" class="radio">Group</label>
+            </div>
+            <hr>
+            <label id="icon" for="name"><i class="far fa-user"></i></i></label>
+            <input type="text" name="name"  placeholder="Full Name" required />
+
+            <label id="icon" for="name"><i class="fas fa-phone-alt"></i></i></label>
+            <input type="number" name="mobile"  placeholder="Enter Phone Number" required />
+
+            <label id="icon" for="name"><i class="fas fa-map-marker-alt"></i></i></label>
+            <input type="text" name="address" placeholder="Enter Your Address" required />
+
+            <label for="name" id="icon" ><i class="fas fa-cloud-upload-alt"></i></label>
+            <input type="file" name="photo" >
+
+            <label id="icon" for="name"><i class="fas fa-key"></i></i></label>
+            <input type="password" name="password"  placeholder="Password" required />
+
+            <label id="icon" for="name"><i class="fas fa-key"></i></i></label>
+            <input type="password" name="cpassword"  placeholder="Re-Type Password" required />
+
+            <div class="gender">
+                <input type="radio" value="1" id="male" name="gender" checked />
+                <label for="male" class="radio" chec>Male</label>
+                <input type="radio" value="2" id="female" name="gender" />
+                <label for="female" class="radio">Female</label>
+            </div>
+            <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
+            <button class="button">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="testbox">
+        <h1>Login</h1>
+
+        <form action="api/login.php" method="POST">
+            <hr>
+            <div class="accounttype">
+                <input type="radio" value="1" id="radioOne" name="role" checked />
+                <label for="radioOne" class="radio" chec>Voter</label>
+                <input type="radio" value="2" id="radioTwo" name="role" />
+                <label for="radioTwo" class="radio">Group</label>
+            </div>
+            <hr>
+
+            <label id="icon" for="name"><i class="fas fa-phone-alt"></i></i></label>
+            <input type="number" name="mobile" placeholder="Enter Phone Number" required />
+
+            <label id="icon" for="name"><i class="fas fa-key"></i></i></label>
+            <input type="password" name="password" placeholder="Password" required />
+
+            <p>New User?<a href="routes/register1.html">Click here</a> to create your accont now.</p>
+            <button class="button" type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
